@@ -1,29 +1,19 @@
 # chat
 
 ## Purpose
-[Describe the purpose of this SageLang library module.]
+Conversational AI and chat session management library.
 
 ## Features
-- [Feature 1]
-- [Feature 2]
-
-## Installation
-Add as a submodule to your SageLang project:
-```bash
-git submodule add <repository-url> core/lib/chat
-```
-
-## API Documentation
-[Link to detailed API documentation]
+- **Bot**: Framework for building conversational agents.
+- **Persona**: Define and manage agent personalities.
+- **Session**: Robust chat session state management.
 
 ## Usage Example
 ```sage
-import chat
-# Example usage...
+import chat.bot
+import chat.persona
+
+let p = Persona("Helpful Assistant")
+let bot = ChatBot(p)
+bot.start_session()
 ```
-
-## Contributing
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
-
-## License
-MIT (or maintain main project license)
